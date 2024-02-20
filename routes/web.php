@@ -2,6 +2,26 @@
 
 use Illuminate\Support\Facades\Route;
 
+// ROUTES PERTAMA
+Route::get('/hello', function () {
+return 'Hello World';
+});
+
+// ROUTES KEDUA
+Route::get('/world', function () {
+return 'World';
+});
+
+// ROUTES KETIGA
+Route::get('/', function () {
+    return 'Selamat Datang';
+    });
+
+// ROUTES KETIGA
+Route::get('/about', function () {
+    return 'NIM : 2241720220 <br> NAMA : PUTRA ZAKARIA MUZAKI';
+    });
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +33,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
