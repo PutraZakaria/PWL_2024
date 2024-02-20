@@ -45,8 +45,12 @@ Route::get('/user/{name?}', function ($name='John') {
     return 'Nama saya '.$name;
     });
 
+// ROUTE NAME
+Route::get('/user/profile', function() {
+    //
+    })->name('profile');
 
-
+    //untuk singkatan nama router apabila mau dipake diview 
 
 /*
 |--------------------------------------------------------------------------
