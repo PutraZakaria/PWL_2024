@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+// BASIC ROUTING
 // ROUTES PERTAMA
 Route::get('/hello', function () {
 return 'Hello World';
@@ -21,6 +22,23 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return 'NIM : 2241720220 <br> NAMA : PUTRA ZAKARIA MUZAKI';
     });
+
+// ROUTE PARAMETER
+// ROUTES PERTAMA
+Route::get('/user/{name}', function ($name) {
+    return 'Nama saya '.$name;
+    });
+
+// ROUTES KEDUA
+Route::get('/posts/{post}/comments/{comment}', function($postId, $commentId) {
+    return 'Pos ke-'.$postId." Komentar ke-: ".$commentId;
+    });
+
+// ROUTES KETIGA
+Route::get('/articles/{id}', function($Id) {
+    return 'Halaman Artikel dengan ID '.$Id;
+    });
+
 
 /*
 |--------------------------------------------------------------------------
