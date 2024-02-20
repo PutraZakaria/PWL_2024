@@ -39,6 +39,14 @@ Route::get('/articles/{id}', function($Id) {
     return 'Halaman Artikel dengan ID '.$Id;
     });
 
+// OPTIONAL PARAMETERS
+// ROUTES PERTAMA
+Route::get('/user/{name?}', function ($name='John') {
+    return 'Nama saya '.$name;
+    });
+
+
+
 
 /*
 |--------------------------------------------------------------------------
