@@ -8,6 +8,14 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\PhotoController;
 
+// View
+Route::get('/greeting', [WelcomeController::class,
+'greeting']);
+
+// Route::get('/greeting', function () {
+//     return view('blog.hello', ['name' => 'Putra']);
+//     });
+
 // Resource Controller
 // Route::resource('photos', PhotoController::class);
 
